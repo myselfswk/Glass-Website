@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #426696;
+    font-weight: 600;
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+h2, p {
+    color: #658ec6;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+h3 {
+    color: #426696;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+main {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.glass {
+    background: white;
+    min-height: 80vh;
+    width: 80%;
+    background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.circle1, .circle2 {
+    background: white;
+    background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1 {
+    top: 5%;
+    right: 15%;
+}
+
+.circle2 {
+    bottom: 5%;
+    left: 10%;
+}
+
+.dashboard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+}
+
+.link {
+    display: flex;
+    margin: 2rem 0rem;
+    padding: 1rem 5rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.link:hover {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    border-radius: 20px;
+}
+
+.link h2 {
+    padding: 0rem 2rem;
+}
+
+.link-H:hover {
+    color: #1467b9;
+}
+
+.games {
+    flex: 2;
+}
+
+.pro {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    border-radius: 2rem;
+    color: white;
+    padding: 1rem;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.pro:hover {
+    transform: scale(1.1);
+}
+
+.pro img {
+    position: absolute;
+    top: -10%;
+    right: 10%;
+}
+
+.pro h2 {
+    width: 40%;
+    color: white;
+    font-weight: 600;
+}
+
+/* GAMES */
+
+.status {
+    margin-bottom: 3rem;
+}
+
+.active-input {
+    background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border: none;
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    height: 30%;
+}
+
+/* .status input {
+    background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border: none;
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+.status input:active {
+    outline: none;
+} */
+
+.games {
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card {
+    display: flex;
+    background: linear-gradient( to left top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+    border-radius: 1rem;
+    margin: 2rem 0rem;
+    padding: 2rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+/* Progress bar for first game */
+
+.progress-one {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-one::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    position: absolute;
+    left: 70%;
+}
+
+/* Progress bar for second game */
+
+.progress-two {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-two::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    position: absolute;
+    left: 80%;
+}
+
+/* Progress bar for third game */
+
+.progress-three {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-three::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    position: absolute;
+    left: 50%;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.percentage {
+    font-weight: bold;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    /* -webkit-background-clip: text; */
+    background-clip: text;
+    background: transparent;
+    /* -webkit-text-fill-color: transparent; */
+}
+
+/* Scroll Bar */
+
+::-webkit-scrollbar {
+    /* for width */
+    width: 20px;
+}
+
+/* ::-webkit-scrollbar-button:single-button {
+    background-color: #CBF3F5;
+    display: block;
+    border-style: solid;
+    height: 13px;
+    width: 16px;
+} */
+
+::-webkit-scrollbar-track {
+    /* Track */
+    box-shadow: inset 0 0 5px grey;
+    /* border-radius: 10px; */
+}
+
+::-webkit-scrollbar-thumb {
+    /* Handle */
+    background: #CBF3F5;
+    border-radius: 10px;
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); */
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    /* Handle on hover */
+    background: #9fedf1;
+}
+
+/* media queries */
+
+@media screen and (max-width: 1035px) {
+    .games {
+        font-size: x-small;
+    }
+    .links {
+        font-size: x-small;
+    }
+    .active-input {
+        height: 30px;
+    }
+    .pro {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .card-info {
+        display: none;
+    }
+    .percentage {
+        display: none;
+    }
+    .active-input {
+        width: 100%;
+    }
+}
